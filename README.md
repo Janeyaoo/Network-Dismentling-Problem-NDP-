@@ -5,21 +5,21 @@ The study of the network dismantling problem in complex networks focuses on iden
 (1) efficient fragmentation of the network, breaking it into small, disconnected components that no longer form a large-scale connected structure; and
 (2) disruption of spreading processes at the minimal possible cost.
 
-🌟 Generalized network dismantling problem
+## 🌟 Generalized network dismantling problem
 
-🌟 Cost
+## 🌟 Cost
 
 Assumption1️⃣ that the cost of removing nodes is the same.
 Assumption2️⃣ that the cost of removing nodes is different.
 
-🌟 Properities
+## 🌟 Properities
 - Topology properities: node centrality
 - Nontopology features:
 - Spectral properties
 
-🌟 Random attack and target attack
+## 🌟 Random attack and target attack
 
-🌟 Network Modeling
+## 🌟 Network Modeling
 
 🕸️ Scale-free NDP
 
@@ -28,4 +28,4 @@ Assumption2️⃣ that the cost of removing nodes is different.
 🌟 Approximations
 - Spin-glass theory & optimal percolation theory
 - 
-- Node-Weighted Laplacian operator 
+- [Node-Weighted Laplacian operator](https://www.pnas.org/doi/abs/10.1073/pnas.1806108116)  
