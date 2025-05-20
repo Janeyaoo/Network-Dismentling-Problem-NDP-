@@ -1,4 +1,4 @@
-# Network-Dismentling-Problem-NDP-
+# Network-Dismentling-Problem（NDP）
 network science -> network dismantling problem
 
 The study of the network dismantling problem in complex networks focuses on identifying an optimal subset of nodes whose removal leads to:
