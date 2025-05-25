@@ -1,6 +1,6 @@
 # Network-Dismentling-Problem（NDP）
 network science -> network dismantling problem
-
+## 
 The study of the network dismantling problem in complex networks focuses on identifying an optimal subset of nodes whose removal leads to:
 (1) efficient fragmentation of the network, breaking it into small, disconnected components that no longer form a large-scale connected structure; and
 (2) disruption of spreading processes at the minimal possible cost.
@@ -46,7 +46,15 @@ Random attack and target attack
 
 ## 🌟 Real world network
 
-# Future directio
+# Future direction
+step1: Cycle Detection
+- Q1: How to explain the cycle using Persistence homology?
+通过Filtration过程计算同调类，跟踪同调类的“出生-死亡”时间。小环网网会在较低尺度下出现和消失，大环往往出现较晚，死亡较晚，条形图中的“条”长。
+图论中的环大小是“结构体积”，而持续同调中的环大小是“结构稳定性”，故持续同调似乎不适合判断是否存在“节点数多”的闭合路径。
+-Q2：如果我们追踪高持久性环涉及的节点，怎么识别这个loop具体是和哪个节点有关？
+Ripser，GUDHI，Dionysus，giotto-tda支持导出代表循环。
+
+
 
 
 🌟 Approximations
