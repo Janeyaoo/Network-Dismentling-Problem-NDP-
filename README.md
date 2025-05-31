@@ -49,16 +49,14 @@ Random attack and target attack
 
 # Future direction
 step1: Cycle Detection
-- Q1: How to explain the cycle using Persistence homology?
-通过Filtration过程计算同调类，跟踪同调类的“出生-死亡”时间。小环网网会在较低尺度下出现和消失，大环往往出现较晚，死亡较晚，条形图中的“条”长。
-图论中的环大小是“结构体积”，而持续同调中的环大小是“结构稳定性”，故持续同调似乎不适合判断是否存在“节点数多”的闭合路径。
--Q2：如果我们追踪高持久性环涉及的节点，怎么识别这个loop具体是和哪个节点有关？
-Ripser，GUDHI，Dionysus，giotto-tda支持导出代表循环。
 
+-Q1: How to explain the cycle using persistent homology?
+Persistent homology computes homology classes through the filtration process and tracks the “birth-death” times of these classes. Small loops tend to appear and disappear at lower filtration scales, while large loops often emerge later and persist longer — resulting in longer bars in the barcode. In graph theory, the size of a loop reflects structural volume, whereas in persistent homology, it reflects structural stability. Therefore, persistent homology may not be well-suited for identifying whether there exists a closed path involving a large number of nodes.
 
+-Q2: If we trace the nodes involved in high-persistence cycles, how can we determine which specific nodes the loop is associated with?
+Tools such as Ripser, GUDHI, Dionysus, and giotto-tda support the extraction of representative cycles, which can help identify the nodes involved in a specific loop.
 
 
 🌟 Approximations
 - Spin-glass theory & optimal percolation theory
-- 
 - [Node-Weighted Laplacian operator](https://www.pnas.org/doi/abs/10.1073/pnas.1806108116)  
