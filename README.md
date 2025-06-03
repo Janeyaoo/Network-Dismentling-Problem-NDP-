@@ -51,14 +51,19 @@ Random attack and target attack
 
 ### 🌟 Real world network
 
+## Robustness measure 
+Traditional ways to evalute network robustness often focus on the behavior of the *largest connected component* $S$ after a certain fraction of nodes are removed. However, this does not capture how the network performs throughout the entire attack process. [The authors](https://doi.org/doi:10.1073/pnas.1009440108) introduce a new robustness measure $R$, defined as:
+$R = \frac{1}{N} \sum_{Q=1}^{N} S(Q)$.
+$R$ is the total number of nodes, $S(Q)$ is the relative size of the largest connected component after removing $Q$ nodes(in targeted order).
+ Others: Average Path Length(APL), Network Efficiency, Algebraic Connectivity...
 ## 🪐Future direction
-step1: Cycle Detection
+### Step1: Cycle Detection
 
--Q1: How to explain the cycle using persistent homology?
+Q1: How to explain the cycle using persistent homology?
 Persistent homology computes homology classes through the filtration process and tracks the “birth-death” times of these classes. Small loops tend to appear and disappear at lower filtration scales, while large loops often emerge later and persist longer — resulting in longer bars in the barcode. In graph theory, the size of a loop reflects structural volume, whereas in persistent homology, it reflects structural stability. Therefore, persistent homology may not be well-suited for identifying whether there exists a closed path involving a large number of nodes.
 
--Q2: If we trace the nodes involved in high-persistence cycles, how can we determine which specific nodes the loop is associated with?
-Tools such as Ripser, GUDHI, Dionysus, and giotto-tda support the extraction of representative cycles, which can help identify the nodes involved in a specific loop.
+Q2: If we trace the nodes involved in high-persistence cycles, how can we determine which specific nodes the loop is associated with?
+<Tools such as Ripser, GUDHI, Dionysus, and giotto-tda support the extraction of representative cycles, which can help identify the nodes involved in a specific loop.
 
 To explore this question further, please see the approach/methodology section of the corresponding [project](https://github.com/Janeyaoo/Topological-Methods-in-Diffusion-Models/blob/main/README.md).
 
