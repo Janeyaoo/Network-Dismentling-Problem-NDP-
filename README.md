@@ -51,7 +51,7 @@ Random attack and target attack
 
 ### 🌟 Real world network
 
-# Future direction
+## 🪐Future direction
 step1: Cycle Detection
 
 -Q1: How to explain the cycle using persistent homology?
@@ -60,7 +60,13 @@ Persistent homology computes homology classes through the filtration process and
 -Q2: If we trace the nodes involved in high-persistence cycles, how can we determine which specific nodes the loop is associated with?
 Tools such as Ripser, GUDHI, Dionysus, and giotto-tda support the extraction of representative cycles, which can help identify the nodes involved in a specific loop.
 
+To explore this question further, please see the approach/methodology section of the corresponding [project](https://github.com/Janeyaoo/Topological-Methods-in-Diffusion-Models/blob/main/README.md).
 
 🌟 Approximations
 - Spin-glass theory & optimal percolation theory
 - [Node-Weighted Laplacian operator](https://www.pnas.org/doi/abs/10.1073/pnas.1806108116)  
+
+## 📖References
+	Braunstein, A., Dall’Asta, L., Semerjian, G., & Zdeborová, L. (2016). Network dismantling. Proceedings of the National Academy of Sciences, 113(44), 12368-12373. [Paper](https://doi.org/10.1073/pnas.1605083113)
+	Wandelt, S., Sun, X., Feng, D., Zanin, M., & Havlin, S. (2018). A comparative analysis of approaches to network-dismantling. Scientific Reports, 8(1), 13513. [Paper](https://doi.org/10.1038/s41598-018-31902-8) 
+	Ren, X.-L., Gleinig, N., Helbing, D., & Antulov-Fantulin, N. (2019). Generalized network dismantling. Proceedings of the National Academy of Sciences, 116(14), 6554-6559. [Paper](https://doi.org/doi:10.1073/pnas.1806108116) 
