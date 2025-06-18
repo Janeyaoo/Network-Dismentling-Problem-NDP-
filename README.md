@@ -8,7 +8,10 @@ The study of the network dismantling problem in complex networks focuses on iden
 	-Efficient fragmentation of the network, breaking it into small, disconnected components that no longer form a large-scale connected structure;
 	-Disruption of spreading processes at the minimal possible cost.
 	-The choice of the nodes to be included in the dismantling set was based on their degrees (favoring the inclusion of the most connected vertices) or some measure of their centrality.
-
+	- Niche-based Node Importance 
+	$\boxed{
+NI(v) = \alpha \cdot \text{LocalRole}(v) + \beta \cdot \text{GlobalInfluence}(v) + \gamma \cdot \text{Uniqueness}(v)
+}$
 ## ❓Similar combinatorial optimization problems
 - **Decycling problem**: to find the smallest set of vertices whose removal makes the graph acylic,meaning it contains no cycles.
 
